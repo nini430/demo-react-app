@@ -3,5 +3,5 @@ import App from "./App";
 
 test("renders heading", () => {
   render(<App />);
-  expect(screen.getByText(/React Demo App/i)).Not.toBeInTheDocument();
+  expect(screen.getByText(/React Demo App/i)).toBeInTheDocument();
 });
