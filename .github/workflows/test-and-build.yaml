@@ -9,7 +9,7 @@ jobs:
       - name: installing node
         uses: actions/setup-node@v6
         with:
-          node_version: '22.15.1'
+          node-version: '22.15.1'
       - name: installing dependencies
         run: npm ci
       - name: testing app
