@@ -25,5 +25,5 @@ jobs:
           node-version: '24.12.0'
       - name: installing dependencies
         run: npm install
-      - name: starting the app
-        run: npm start
+      - name: building the app
+        run: npm run build
