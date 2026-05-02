@@ -1,8 +1,9 @@
-name: Activity Types
+
+name: Event filters
 on:
   push:
-    branches: [releases/**]
-    paths: ['*.js']
+    branches: ['releases/**']
+    paths: ['**/*.js']
 jobs:
   test:
     runs-on: ubuntu-latest
