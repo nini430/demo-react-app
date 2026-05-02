@@ -1,0 +1,34 @@
+
+name: Event filters
+on:
+  push:
+    branches: ['releases/**']
+    paths: ['**/*.js']
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: getting my code first
+        uses: actions/checkout@v6
+      - name: installing node
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24.12.0'
+      - name: installing dependencies
+        run: npm install
+      - name: testing the app
+        run: npm test
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: getting my code first
+        uses: actions/checkout@v6
+      - name: installing node
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24.12.0'
+      - name: installing dependencies
+        run: npm install
+      - name: building the app
+        run: npm run build
