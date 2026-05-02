@@ -3,7 +3,7 @@ name: Event filters
 on:
   push:
     branches: ['releases/**']
-    paths: ['**/*.js']
+    paths-ignore: ['**/*.js']
 jobs:
   test:
     runs-on: ubuntu-latest

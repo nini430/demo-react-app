@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div style={{ padding: 70 }}>
+    <div style={{ padding: 80 }}>
       <p>React Demo App Built for Github Action Testing</p>
     </div>
   );
